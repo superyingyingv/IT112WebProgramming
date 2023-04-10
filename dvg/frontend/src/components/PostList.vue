@@ -1,5 +1,3 @@
-new Vue({
-  router,
 <template>
     <div>
         <ol class="post-list">
@@ -84,4 +82,3 @@ new Vue({
         font-size: 0.8125rem;
     }
 </style>
-})

@@ -1,5 +1,3 @@
-new Vue({
-  router,
 <template>
     <div>
         <h2>Recent posts</h2>
@@ -22,4 +20,3 @@ new Vue({
         },
     }
 </script>
-})

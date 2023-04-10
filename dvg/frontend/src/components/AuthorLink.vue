@@ -1,5 +1,3 @@
-new Vue({
-  router,
 <template>
     <router-link :to="`/author/${author.user.username}`">{{ displayName }}</router-link>
 </template>
@@ -24,4 +22,3 @@ new Vue({
         },
     }
 </script>
-})

@@ -1,5 +1,3 @@
-new Vue({
-  router,
 <template>
     <div class="post" v-if="post">
         <h2>{{ post.title }}: {{ post.subtitle }}</h2>
@@ -40,4 +38,3 @@ new Vue({
         },
     }
 </script>
-})

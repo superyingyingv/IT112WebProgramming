@@ -1,5 +1,3 @@
-new Vue({
-  router,
 <template>
     <div v-if="author">
         <h2>{{ displayName }}</h2>
@@ -37,4 +35,3 @@ new Vue({
         },
     }
 </script>
-})

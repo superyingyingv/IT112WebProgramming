@@ -1,5 +1,3 @@
-new Vue({
-  router,
 <template>
     <div>
         <h2>Posts in #{{ $route.params.tag }}</h2>
@@ -22,4 +20,3 @@ new Vue({
         },
     }
 </script>
-})
