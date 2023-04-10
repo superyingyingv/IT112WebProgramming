@@ -1,3 +1,5 @@
+new Vue({
+  router,
 <template>
     <div class="post" v-if="post">
         <h2>{{ post.title }}: {{ post.subtitle }}</h2>
@@ -16,25 +18,26 @@
 </template>
 
 <script>
-import AuthorLink from '@/components/AuthorLink'
+    import AuthorLink from '@/components/AuthorLink'
 
-export default {
-  name: 'PostItem',
-  components: {
-    AuthorLink,
-  },
-  data () {
-    return {
-      post: null,
+    export default {
+        name: 'PostItem',
+        components: {
+            AuthorLink,
+        },
+        data() {
+            return {
+                post: null,
+            }
+        },
+        methods: {
+            displayableDate(date) {
+                return new Intl.DateTimeFormat(
+                    'en-US',
+                    { dateStyle: 'full' },
+                ).format(new Date(date))
+            }
+        },
     }
-  },
-  methods: {
-    displayableDate (date) {
-      return new Intl.DateTimeFormat(
-        'en-US',
-        { dateStyle: 'full' },
-      ).format(new Date(date))
-    }
-  },
-}
 </script>
+})

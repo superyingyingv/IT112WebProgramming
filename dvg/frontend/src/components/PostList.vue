@@ -1,3 +1,5 @@
+new Vue({
+  router,
 <template>
     <div>
         <ol class="post-list">
@@ -22,38 +24,38 @@
 
 
 <script>
-import AuthorLink from '@/components/AuthorLink'
+    import AuthorLink from '@/components/AuthorLink'
 
-export default {
-  name: 'PostList',
-  components: {
-    AuthorLink,
-  },
-  props: {
-    posts: {
-      type: Array,
-      required: true,
-    },
-    showAuthor: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
-  computed: {
-    publishedPosts () {
-      return this.posts.filter(post => post.published)
+    export default {
+        name: 'PostList',
+        components: {
+            AuthorLink,
+        },
+        props: {
+            posts: {
+                type: Array,
+                required: true,
+            },
+            showAuthor: {
+                type: Boolean,
+                required: false,
+                default: true,
+            },
+        },
+        computed: {
+            publishedPosts() {
+                return this.posts.filter(post => post.published)
+            }
+        },
+        methods: {
+            displayableDate(date) {
+                return new Intl.DateTimeFormat(
+                    'en-US',
+                    { dateStyle: 'full' },
+                ).format(new Date(date))
+            }
+        },
     }
-  },
-  methods: {
-    displayableDate (date) {
-      return new Intl.DateTimeFormat(
-        'en-US',
-        { dateStyle: 'full' },
-      ).format(new Date(date))
-    }
-  },
-}
 </script>
 
 
@@ -82,3 +84,4 @@ export default {
         font-size: 0.8125rem;
     }
 </style>
+})

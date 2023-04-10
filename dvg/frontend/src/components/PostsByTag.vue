@@ -1,3 +1,5 @@
+new Vue({
+  router,
 <template>
     <div>
         <h2>Posts in #{{ $route.params.tag }}</h2>
@@ -6,17 +8,18 @@
 </template>
 
 <script>
-import PostList from '@/components/PostList'
+    import PostList from '@/components/PostList'
 
-export default {
-  name: 'PostsByTag',
-  components: {
-    PostList,
-  },
-  data () {
-    return {
-      posts: null,
+    export default {
+        name: 'PostsByTag',
+        components: {
+            PostList,
+        },
+        data() {
+            return {
+                posts: null,
+            }
+        },
     }
-  },
-}
 </script>
+})

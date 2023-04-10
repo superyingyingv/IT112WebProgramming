@@ -1,3 +1,5 @@
+new Vue({
+  router,
 <template>
     <div v-if="author">
         <h2>{{ displayName }}</h2>
@@ -12,26 +14,27 @@
 </template>
 
 <script>
-import PostList from '@/components/PostList'
+    import PostList from '@/components/PostList'
 
-export default {
-  name: 'AuthorItem',
-  components: {
-    PostList,
-  },
-  data () {
-    return {
-      author: null,
+    export default {
+        name: 'AuthorItem',
+        components: {
+            PostList,
+        },
+        data() {
+            return {
+                author: null,
+            }
+        },
+        computed: {
+            displayName() {
+                return (
+                    this.author.user.firstName &&
+                    this.author.user.lastName &&
+                    `${this.author.user.firstName} ${this.author.user.lastName}`
+                ) || `${this.author.user.username}`
+            },
+        },
     }
-  },
-  computed: {
-    displayName () {
-      return (
-        this.author.user.firstName &&
-        this.author.user.lastName &&
-        `${this.author.user.firstName} ${this.author.user.lastName}`
-      ) || `${this.author.user.username}`
-    },
-  },
-}
 </script>
+})

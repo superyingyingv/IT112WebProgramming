@@ -1,3 +1,5 @@
+new Vue({
+  router,
 <template>
     <div>
         <h2>Recent posts</h2>
@@ -6,17 +8,18 @@
 </template>
 
 <script>
-import PostList from '@/components/PostList'
+    import PostList from '@/components/PostList'
 
-export default {
-  name: 'AllPosts',
-  components: {
-    PostList,
-  },
-  data () {
-    return {
-        allPosts: null,
+    export default {
+        name: 'AllPosts',
+        components: {
+            PostList,
+        },
+        data() {
+            return {
+                allPosts: null,
+            }
+        },
     }
-  },
-}
 </script>
+})
