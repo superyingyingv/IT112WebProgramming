@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BasicProject", "BasicProject\BasicProject.pyproj", "{90EFD324-809D-484A-A41F-58EF31045E48}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FortuneTeller", "FortuneTeller\FortuneTeller.pyproj", "{02AE91A6-C2C9-4A97-B710-5A661F908FC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{90EFD324-809D-484A-A41F-58EF31045E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90EFD324-809D-484A-A41F-58EF31045E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90EFD324-809D-484A-A41F-58EF31045E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02AE91A6-C2C9-4A97-B710-5A661F908FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02AE91A6-C2C9-4A97-B710-5A661F908FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02AE91A6-C2C9-4A97-B710-5A661F908FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02AE91A6-C2C9-4A97-B710-5A661F908FC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
